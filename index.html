@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="nav">
+            <a class ="a active"  href="#">HOME</a>
+            <a  class ="b" href="#">RESUME</a>
+            <a  class ="c" href="#">PROJECTS</a>
+            <a class ="d" Shref="#">CONTACT</a>
+        </div>
+        <div class ="content">
+            <div class="home">
+                <h1> I'm Bikash Shrestha</h1>
+                <h3> Coder </h3>
+            </div>
+            <div class="resume">
+               <p>fsjdkfnkdsfbkjsdfbk.<br>
+                zvklzcncvlkcvncvkx .<br>
+                bkfbdskbvhkscxcxn</p> 
+            </div>
+            <div class="project">
+            <h1> Hello</h1>
+
+                <div class="image">
+                    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/06/07/15283977760213.jpg"/>
+                </div>
+            </div>
+            <div class="image1">
+                    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/06/07/15283977760213.jpg"/>
+                </div>
+                <div class ="contact">
+                   <div class="contactform">
+                       <form action=""method="post">
+                        <input type="text" name="" value="First Name"
+                       </form>
+                   </div>
+                </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a').click(function(){
+    var selected =- $(this);
+    $('a').removeClass('.')
+    $(selected).addClass('active');
+    });
+    var $a = $('.a'),
+    $b= $('.b'),
+    $c= $('.c'),
+    $d= $('.d'),
+    $home = $('.home'),
+    $resume = $('.resume');
+    $gallery = $('.gallery'),
+    $rcontact = $('.contact');
+
+    $a.click(function(){
+        $home.fadeIn();
+        $resume.fadeOut();
+        $gallery.fadeOut();
+        $rcontact.fadeOut();
+
+    });
+    $b.click(function(){
+        $resume.fadeIn();
+        $home.fadeOut();
+        $gallery.fadeOut();
+        $contact.fadeOut();
+
+    });
+    $c.click(function(){
+        $gallery.fadeIn();
+        $home.fadeOut();
+        $resume.fadeOut();
+        $contact.fadeOut();
+       
+
+    });
+    $d.click(function(){
+        $contact.fadeIn();
+        $home.fadeOut();
+        $resume.fadeOut();
+        $gallery.fadeOut();
+       
+
+    });
+    });
+
+</script>
+</body>
+</html>
